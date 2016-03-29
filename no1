@@ -18,10 +18,11 @@ public class JurnalRPL {
         Scanner s = new Scanner(System.in);
         System.out.print("Input : ");
         int n = s.nextInt();
+        int hasil=0;
         System.out.print("hasilnya : ");
         for(int i=1;i<=n;i++)
-            System.out.print(fib(i) + " ");
-        System.out.println();
+            hasil = hasil + fib(i);
+        System.out.println(hasil);
     }
 
     private static int fib(int n){
@@ -32,5 +33,4 @@ public class JurnalRPL {
             f = fib(n-1) + fib(n-2);
 	return f;
     }
-    
 }
